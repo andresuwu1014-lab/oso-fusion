@@ -1,0 +1,6 @@
+{
+  "name": "Oso Fusión",
+  "description": "Restaurante de fusión asiática y colombiana en Ibagué, Tolima. Pedidos en línea para mesa, recoger y domicilio con Oso Asistente y pedidos por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

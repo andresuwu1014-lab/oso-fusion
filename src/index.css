@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-charcoal: #121413;
+    --color-charcoal-card: #181c19;
+    --color-charcoal-elevated: #202622;
+    --color-gold: #E5B869;
+    --color-gold-light: #F4D396;
+    --color-gold-dark: #B98B3E;
+    --color-bamboo: #3F7A4D;
+    --color-forest: #1F3F2E;
+    --color-wood: #5C3D2E;
+    --color-ocobo: #E89DA8;
+    --color-ocobo-soft: #F9E5E8;
+    --color-cream: #F3EFE6;
+    --color-cream-muted: #CFCBC0;
+  }
+
+  body {
+    background-color: #111412;
+    color: #F3EFE6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom Gold Rim and Shadows */
+.gold-border {
+  border: 1px solid rgba(229, 184, 105, 0.28);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(229, 184, 105, 0.45);
+  box-shadow: 0 0 20px rgba(229, 184, 105, 0.12);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #F5DCA3 0%, #E5B869 50%, #C49847 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ocobo-badge {
+  background: rgba(232, 157, 168, 0.12);
+  border: 1px solid rgba(232, 157, 168, 0.35);
+  color: #F4C4CC;
+}
+
+.bamboo-badge {
+  background: rgba(63, 122, 77, 0.16);
+  border: 1px solid rgba(63, 122, 77, 0.4);
+  color: #8ED09E;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121513;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3630;
+  border-radius: 4px;
+  border: 1px solid rgba(229, 184, 105, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #414E45;
+}
+
+/* Andean Mist / Subtle Background Pattern */
+.bg-andean-pattern {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(63, 122, 77, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(232, 157, 168, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(229, 184, 105, 0.03) 0%, transparent 60%);
+}
+
+/* Custom Bear Paw Cursor */
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor-area {
+    cursor: default;
+  }
+}
